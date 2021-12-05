@@ -10,6 +10,7 @@ public class User {
 	 final String LAST_NAME= "^[A-Z][a-z]{2,}(\\s)?[A-Z][a-z]{2,}$";
 	 final String EMAIL = "^[a-zA-Z0-9+_-]+([.][a-zA-Z0-9+_-]+)*@[a-zA-Z0-9]+([.][a-zA-Z0-9+_-]+)+$";
 	 final String PHONE = "^[0-9]{1,3}[\\s][0-9]{10}$";
+	 final String PASSWORD = "^.{8,}$";
 	 
 	 public void FirstName(String name){
 		
@@ -34,6 +35,12 @@ public class User {
 
 	public void Phone(String name) {
 		Pattern pattern = Pattern.compile(PHONE);
+		Matcher match = pattern.matcher(name);
+		System.out.println(match.matches());
+	}
+	
+	public void Password(String name) {
+		Pattern pattern = Pattern.compile(PASSWORD);
 		Matcher match = pattern.matcher(name);
 		System.out.println(match.matches());
 	}
