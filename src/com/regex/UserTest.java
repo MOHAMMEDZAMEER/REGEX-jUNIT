@@ -11,8 +11,8 @@ public class UserTest {
 
 		String  name = z.nextLine();
 		
-		User firstname = new User();
-		firstname.FirstName(name);
+		User LastName = new User();
+		LastName.LAST_NAME(name);
 			
 			z.close();
 		
