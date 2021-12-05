@@ -26,6 +26,7 @@ package com.junit;
 			return match.matches();
 		}
 		
+		
 		public boolean phoneNumber(String phone) {
 			
 			Pattern pattern = Pattern.compile(PHONE);
