@@ -2,7 +2,11 @@ package com.junit;
 
 	import java.util.regex.Matcher;
 	import java.util.regex.Pattern;
-
+	import java.com.exception.InavalidNameException;
+	import java.com.exception.InavalidPasswordException;
+	import java.com.exception.InvalidPhoneNumberException;
+	import java.com.exception.InvalidEmailException;
+	
 	public class User {
 		
 		final String NAME = "^[A-Z][a-z]{2,}(\\s)?[A-Z][a-z]{2,}$";
